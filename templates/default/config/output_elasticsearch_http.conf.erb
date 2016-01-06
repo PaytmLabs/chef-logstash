@@ -5,7 +5,6 @@ output {
 <% else -%>
     hosts => ["127.0.0.1"]
 <% end -%>
-    protocol => "http"
 <% if @es_index -%>
     index => "<%= @es_index %>"
 <% end -%>
