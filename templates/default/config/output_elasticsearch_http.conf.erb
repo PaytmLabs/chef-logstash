@@ -1,7 +1,7 @@
 output {
   elasticsearch {
 <% if @elasticsearch_ip -%>
-    hosts => ["<%= @elasticsearch_ip %>"]
+    hosts => <%= @elasticsearch_ip %>
 <% else -%>
     hosts => ["127.0.0.1"]
 <% end -%>

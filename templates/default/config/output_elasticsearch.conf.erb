@@ -1,7 +1,7 @@
 output {
   elasticsearch_java {
 <% if @elasticsearch_ip -%>
-    hosts => ["<%= @elasticsearch_ip %>"]
+    hosts => <%= @elasticsearch_ip %>
 <% end -%>
 <% if @elasticsearch_cluster -%>
     cluster => "<%= @elasticsearch_cluster %>"
